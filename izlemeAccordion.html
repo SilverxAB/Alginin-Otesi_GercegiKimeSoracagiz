@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İzleme Ekonomisi</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 2rem;
+      background-color: #fdfdfd;
+      color: #111;
+    }
+    .accordion {
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      transition: background-color 0.2s ease;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background-color: #eee;
+    }
+    .accordion:hover {
+      background-color: #ddd;
+    }
+    .panel {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<h2>İzleme Ekonomisi</h2>
+
+<button class="accordion">Yazıyı Aç / Kapat</button>
+<div class="panel">
+<pre style="white-space: pre-wrap;">
+İzleme Ekonomisi
+Bizi İzleyen Sistemlerin Politik Gücü
+
+Bir zamanlar gözetlemek, yalnızca devletin işiydi.
+Bugünse herkes izleniyor. Hem de gönüllü olarak.
+
+Kameralarla değil, çerezlerle; kelepçeyle değil, beğeni tuşlarıyla…
+
+Bizi bizden daha iyi tanıyan sistemler var artık. Davranış kalıplarımızı, tüketim alışkanlıklarımızı, duygularımızı ve hatta seçim eğilimlerimizi analiz eden algoritmalarla örülmüş bir dünya bu.
+
+Peki neden izleniyoruz?
+
+Çünkü izleme, sadece güvenlik değil; aynı zamanda bir ekonomik değer.
+Veri toplamak, artık yeni bir petrol çıkarmak gibi.
+Sistem seni tanırsa, sana ne satacağını bilir.
+Ne izleyeceğini, neye oy vereceğini, kimi sevip kimi “iptal” edeceğini bilebilir.
+
+Büyük verinin, küçük hayatlarımızı nasıl kuşattığını; görünmeden yönetmenin yollarını anlatıyor bu yazı.
+</pre>
+</div>
+
+<script>
+  const acc = document.querySelector(".accordion");
+  const panel = document.querySelector(".panel");
+  acc.addEventListener("click", () => {
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+</script>
+
+</body>
+</html>
