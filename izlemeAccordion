@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İzleme Ekonomisi</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: 0.3s;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Algı ile Yüzleşmek Dizisi</h2>
+
+<button class="accordion">2. İzleme Ekonomisi — Bizi İzleyen Sistemlerin Politik Gücü</button>
+<div class="panel">
+  <p>
+    Günümüz dünyasında “görülmek” artık bir özgürlük değil; bir gözetim biçimi. <br>
+    Her tıklama, her paylaşım, her arama bir iz bırakıyor ve bu izler yalnızca ticari değil, politik sonuçlar da yaratıyor.
+  </p>
+  <p>
+    İzleme kapitalizmi olarak adlandırılan bu yeni ekonomi modeli, insan davranışlarını birer veri kaynağına dönüştürerek bunlardan tahminler üretiyor. Tahminler, yönlendirmelere; yönlendirmeler, kontrol biçimlerine dönüşüyor.
+  </p>
+  <p>
+    <strong>Bu yeni sistemin en çarpıcı yönü:</strong> Gönüllü izleniyoruz. Hatta çoğu zaman buna direnmek değil, katkı sunmak için yarışıyoruz. Çünkü sistem, gözetimi “katılım” gibi gösteriyor.
+  </p>
+  <p>
+    Oysa bu “katılım” bir özgürlük değil; <strong>veri üzerinden yönetilen</strong> bir itaat biçimi.
+  </p>
+  <p>
+    <em>İzleme ekonomisi sadece pazarlama değil, aynı zamanda bir politik tahakküm aracıdır.</em>
+  </p>
+  <p>
+    Unutmayalım:
+    Gerçek güç, artık sadece silahların ya da paranın değil; <br>
+    <strong>verinin ve algının</strong> kontrol edilmesindedir.
+  </p>
+  <p>
+    👉 <strong>Dijital Diktatörlük — Algoritmaların Otoriterleşmesi</strong>
+  </p>
+</div>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
